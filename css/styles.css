@@ -1,11 +1,3 @@
-/*:root {
-  --primary-text-color: #212121;
-  --title-text-color: #757575;
-  --accent-color: #2196f3;
-  --color-white: #ffffff;
-  --primary-bg-color: #e5e5e5;
-}*/
-
 body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
@@ -61,39 +53,15 @@ a {
   color: black;
 }
 
-
-
 .logo > span {
   color: #2196f3;
 }
 
-/*.logo {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  color: #212121;
-  text-decoration: none;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  margin-top: 24px;
-  margin-right: 94px;
-}
-
-.logo-word {
-  color: #2196f3;
-}
-
-.logo-word-ftr {
-  color: #ffffff;
-}*/
-
 /*--------------------НАВІГАЦІЯ-------------------*/
+
 .nav-list {
   display: flex;
-  /*flex-direction: row;
-  margin-top: 32px;
-  margin-right: 331px;*/
+
 }
 
 .nav-list>.item+.item {
@@ -251,6 +219,10 @@ color: #2196f3;
   padding: 0px;
 }
 
+.work-flex >.item + .item{
+  margin-left: 30px;
+}
+
 .work-title {
   width: 270px;
   color: #212121;
@@ -272,6 +244,23 @@ color: #2196f3;
   margin-top: 10px;
   margin-bottom: 0px;
   margin-right: 30px;
+}
+
+.features-container-icon{
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features-icon{
+  width: 70px;
+  height: 70px;
 }
 
 /*-------------------Чем мы занимаемся--------------*/
@@ -311,9 +300,12 @@ color: #2196f3;
 .team-item {
   margin-right: 30px;
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:last-child{
+  margin-right: 0px;
 }
 
 .container-team-item {
@@ -350,6 +342,14 @@ color: #2196f3;
   margin-top: 16px;
 }
 
+.sm-flex li{
+  margin-right: 10px;
+}
+
+.sm-flex li:last-child{
+  margin-right: 0px;
+}
+
 .sm-icon-link{
   width: 44px;
   height: 44px;
@@ -357,7 +357,7 @@ color: #2196f3;
   align-items: center;
   justify-content: center;
   border-radius: 50px;
-  margin-right: 10px;
+
 }
 
 .sm-icon {
@@ -382,6 +382,10 @@ color: #2196f3;
   margin-right: 30px;
 }
 
+.customer-cntr:last-child{
+  margin-right: 0px;
+}
+
 .customer-icon{
   fill: currentColor;
   Width: 106px;
@@ -397,7 +401,7 @@ color: #2196f3;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 30px;
+
   color: #AFB1B8;
 }
 
@@ -418,24 +422,30 @@ color: #2196f3;
   padding-bottom: 60px;
 }
 
+.footer-box{
+  display: flex;
+}
+
+.footer-address-box{
+  margin-right: 70px;
+}
+
 address {
   font-style: normal;
 }
 
-.address-item {
-  padding-left: 0px;
-  margin-top: 20px;
+.address-list>.item+.item {
+  margin-top: 9px;
 }
 
 .address-link {
   color: #ffffff;
   font-weight: 400;
   font-size: 14px;
-  text-decoration: none;
+
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-bottom: 9px;
-  display: block;
+
 }
 
 .address-link:hover {
@@ -446,43 +456,39 @@ address {
   font-weight: 400;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
+
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-bottom: 9px;
+
+}
+
+.logo-bottom{
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
   display: block;
+  margin-bottom: 20px;
 }
 
-.mail-tel-ftr:last-child {
-  margin-bottom: 0px;
-}
-
-.footer-container{
-  display: flex;
-  align-items: baseline;
+.logo-bottom>span {
+  color:#2196f3;
 }
 
 /*-------------присоединяйтесь-----------------------*/
-.join-sm{
-  margin-left: 70px;
-}
+.join-box{
+  margin-top: 15px;
+  color: #ffffff;;
+  }
 
-.join{
-  color: #ffffff;
+.text-join{
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 1.14;
   letter-spacing: 0.03em;
-}
-
-.sm-flex-ftr {
-  display: flex;
-  margin: 0px;
-  padding: 0px;
-  justify-content:flex-start ;
-  align-items: center;
-  margin-top: 20px;
+  margin: 0;
 }
 
 .sm-flex-ftr {
@@ -502,9 +508,15 @@ address {
   justify-content: center;
   border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.1 );
+}
+
+.sm-flex-ftr li{
   margin-right: 10px;
 }
- 
+
+.sm-flex-ftr li:last-child {
+  margin-right: 0px;
+}
 
 .ftr-sm-icon{
   fill: #FFFFFF;
