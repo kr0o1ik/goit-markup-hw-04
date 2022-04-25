@@ -120,8 +120,8 @@ color: #2196f3;
 }
 
 .smartphone{
-  width: 16px;
-  height: 12px;
+  width: 10px;
+  height: 16px;
   fill: currentColor;
   margin-right: 10px;
 
@@ -549,7 +549,7 @@ address {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-
+  
 }
 
 .button-flex li{
@@ -567,15 +567,16 @@ address {
   letter-spacing: 0.03em;
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
+  border: transparent;
 }
 
 .list-button-name:hover,
 .list-button-name:focus {
   background-color: #2196f3;
   color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+  0px 2px 1px rgba(0, 0, 0, 0.2);*/
 }
 
 .projects-flex {
