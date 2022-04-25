@@ -30,20 +30,44 @@ ul {
   list-style: none;
 }
 
-/*--------------------ШАПКА-------------------------*/
-.header-flex {
-  display: flex;
-  align-items: center;
-  padding-bottom: 25px;
+a {
+  text-decoration: none;
 }
 
-.nav-flex {
+/*--------------------ШАПКА-------------------------*/
+.header-box {
   display: flex;
-  align-items: center;
+  /*align-items: center;
+  padding-bottom: 25px;*/
+}
+
+.nav-box {
+  display: flex;
+  /*align-items: center;*/
 }
 
 /*--------------------ЛОГО-------------------------*/
 .logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+  font-family: 'Raleway',
+  sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: black;
+}
+
+
+
+.logo > span {
+  color: #2196f3;
+}
+
+/*.logo {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -62,28 +86,29 @@ ul {
 
 .logo-word-ftr {
   color: #ffffff;
-}
+}*/
 
 /*--------------------НАВІГАЦІЯ-------------------*/
-.nav-link-flex {
+.nav-list {
   display: flex;
-  flex-direction: row;
+  /*flex-direction: row;
   margin-top: 32px;
-  margin-right: 331px;
+  margin-right: 331px;*/
+}
+
+.nav-list>.item+.item {
+  margin-left: 50px;
 }
 
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
-  color: #212121;
-  text-decoration: none;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  margin-right: 50px;
-}
-
-.nav-link:last-child {
-  margin-right: 0px;
+  color: #212121;
 }
 
 .nav-link:hover,
@@ -94,28 +119,29 @@ ul {
 
 
 /*--------------------КОНТАКТИ---------------------*/
-.mail-tel-link {
-  font-weight: 500;
-  font-size: 14px;
-  color: #757575;
-  text-decoration: none;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.contact-list {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-right: 30px;
-  align-items: center;
+  margin-left: auto;
 }
 
-.mail-tel-link.hover,
-.mail-tel-link.focus{
-  fill: #2196f3;
+.contact-list>.item+.item {
+margin-left: 50px;
 }
 
-.nav-flex {
-  display: flex;
-  align-items: center;
+.contact {
+display: flex;
+align-items: center;
+padding-top: 32px;
+padding-bottom: 32px;
+color: #757575;
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+}
+
+.contact:hover,
+.contact:focus {
+color: #2196f3;
 }
 
 .envelope{
@@ -495,9 +521,9 @@ address {
 }
 
 /*-------------Портфолио-----------------------------*/
-.section-hdr {
-  border-bottom: 1px solid #ececec;
-}
+.border-hdr{
+  border-bottom: 1px solid #ECECEC;
+  }
 
 .container-btn {
   width: 1200px;
@@ -510,7 +536,12 @@ address {
 .button-flex {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
 }
+
+.button-flex li{
+  margin-right: 8px;
+  }
 
 .list-button-name {
   font-family: Roboto;
@@ -521,19 +552,17 @@ address {
   cursor: pointer;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  margin-right: 8px;
   border-radius: 4px;
   padding: 6px 22px 6px 22px;
-  border: transparent;
 }
 
-.list-button-name:hover {
+.list-button-name:hover,
+.list-button-name:focus {
   background-color: #2196f3;
   color: #ffffff;
-}
-
-.list-button-name:focus {
-  color: #2196f3;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .projects-flex {
@@ -543,18 +572,24 @@ address {
   margin-top: -30px;
 }
 
-.projects-items {
+.projects-border{
   margin-left: 30px;
-  margin-top: 30px;
-  width: 370px;
+  margin-bottom: 30px;
 }
 
-.projects-items:nth-child(3n) {
-  padding-right: 0px;
+.projects-border:hover{
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.projects-border {
-  border: 1px solid #eeeeee;
+img{
+  display: block;
+}
+
+.projects-items{
+  padding: 20px 24px ;
+  border: 1px solid #EEEEEE;
 }
 
 .projects-name {
