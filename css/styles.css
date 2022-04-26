@@ -113,15 +113,12 @@ color: #2196f3;
 }
 
 .envelope{
-  /*width: 16px ;
-  height: 12px ;*/
   fill: currentColor;
   margin-right: 10px;
 }
+/**/
 
 .smartphone{
-  /*width: 10px;
-  height: 16px;*/
   fill: currentColor;
   margin-right: 10px;
 }
